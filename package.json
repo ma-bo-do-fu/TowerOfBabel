@@ -1,0 +1,20 @@
+{
+  "name": "TowerOfBabel",
+  "version": "1.0.0",
+  "description": "nodeschool tower of babel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ma-bo-do-fu/TowerOfBabel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ma-bo-do-fu/TowerOfBabel/issues"
+  },
+  "homepage": "https://github.com/ma-bo-do-fu/TowerOfBabel#readme"
+}
