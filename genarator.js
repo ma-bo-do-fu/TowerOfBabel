@@ -1,13 +1,20 @@
-let fibonacci = function* () {
-  let currentValue = 0, nextValue = 1;
-  while (currentValue < 1000) {
-    // ここでdestructuringで値をswapさせる。
-    [currentValue, nextValue] = [nextValue, currentValue + nextValue];
-    // yieldで値を返す
-    yield currentValue;
+const max = process.argv[2];
+let FizzBuzz = function* () {
+  let value = 1, tmp = 1;
+  while (value < max) {
+    value = tmp;
+    if (tmp % 15 === 0) {
+      value = 'FizzBuzz';
+    } else if (tmp % 5 === 0) {
+      value = 'Buzz';
+    } else if (tmp % 3 === 0) {
+      value = 'Fizz';
+    }
+    tmp++;
+    yield value;
   }
 }();
 
-for (var n of fibonacci) {
+for (var n of FizzBuzz) {
   console.log(n);
 }
